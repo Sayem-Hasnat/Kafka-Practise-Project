@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="AdditionalModuleElements">
+    <content url="file://$MODULE_DIR$/../deliveryboy" />
+  </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="fab21f17-20ba-4c33-ab17-2c1dfe8999c5" />
+  </component>
+</module>

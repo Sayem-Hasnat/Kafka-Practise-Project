@@ -1,0 +1,37 @@
+# Start the ZooKeeper service
+$ bin/zookeeper-server-start.sh config/zookeeper.properties
+
+# Start the Kafka broker service
+$ bin/kafka-server-start.sh config/server.properties
+
+CREATE A TOPIC TO STORE YOUR EVENTS
+bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+
+WRITE SOME EVENTS INTO THE TOPIC
+bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+
+Consuming message
+bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+
+Producer configuration
+spring.kafka.producer.bootstrap-servers=localhost:9092
+spring.kafka.producer.key-serializer=org.apache.kafka.common.serialization.StringSerializer
+spring.kafka.producer.value-serializer=org.apache.kafka.common.serialization.StringSerializer
+
+
+Consumer configuration
+server.port=8081
+spring.kafka.consumer.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=group-id
+spring.kafka.consumer.auto-offset-reset=earliest
+spring.kafka.consumer.key-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.StringDeserializer
+
+____________________________________
+
+
+ 
+
+
+
+
