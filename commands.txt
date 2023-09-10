@@ -29,7 +29,7 @@ spring.kafka.consumer.value-deserializer=org.apache.kafka.common.serialization.S
 
 ____________________________________
 
-
+APACHE KAFKA QUICKSTART : https://kafka.apache.org/quickstart
  
 
 
