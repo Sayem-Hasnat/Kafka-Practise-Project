@@ -1,4 +1,4 @@
-# Kafka-Practise-Project
+# Kafka Configuration Process
 <details>
 
 <summary>Kafka Cluster Setup Guide:</summary>
@@ -29,8 +29,10 @@ $ rm -rf /tmp/kafka-logs /tmp/zookeeper /tmp/kraft-combined-logs
 ```
 </details>
 
+<details>
 
-# Kafka Listener Microservice Setup Guide
+<summary> Kafka Listener Microservice Setup Guide</summary>
+
 
 
 ### Step 01 : add kafka.properties file
@@ -185,8 +187,12 @@ public class KafkaMailConfig {
 }
 
 ````
+</details>
 
-# Kafka Producer Microservice Setup Guide
+<details>
+
+<summary> Kafka Producer Microservice Setup Guide
+</summary>
 
 ### Step 01 : add kafka Producer properties
 ```ruby
@@ -287,7 +293,7 @@ public boolean updateNotification(EmailDetailsDto mail) {
 
 ````
 
-
+</details>
 
 
 
