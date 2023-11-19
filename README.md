@@ -191,8 +191,7 @@ public class KafkaMailConfig {
 
 <details>
 
-<summary> Kafka Producer Microservice Setup Guide
-</summary>
+<summary> Kafka Producer Microservice Setup Guide </summary>
 
 ### Step 01 : add kafka Producer properties
 ```ruby
@@ -296,8 +295,12 @@ public boolean updateNotification(EmailDetailsDto mail) {
 </details>
 
 
+<details>
 
+<summary> Kafka Dashboard UI Tool  </summary>
+ https://www.conduktor.io/get-started/#desktop
 
+</details>
 
 
 
