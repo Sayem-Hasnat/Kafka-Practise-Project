@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
-import java.util.Random;
 
 @RestController
 @RequestMapping("/location")
@@ -22,10 +21,10 @@ public class LocationController {
     @PostMapping("/update")
     public ResponseEntity<?> updateLocation() {
 
-        for (int i = 1; i <= 50000; i++) {
-            this.kafkaService.updateLocation("( " + i + " , " + Math.round(Math.random() * 100) + " " + ")");
+        for (int i = 1; i <= 10; i++) {
+         //   this.kafkaService.updateLocation("( " + i + " , " + Math.round(Math.random() * 100) + " " + ")");
             this.kafkaService.
-                    updateOrder(new OrderDto("orderName", Long.valueOf(String.valueOf(i))));
+                    updateOrder(new OrderDto("orderName"+i, Long.valueOf(String.valueOf(i))));
         }
 
         return new ResponseEntity<>(Map.of("message", "Location updated"), HttpStatus.OK);
